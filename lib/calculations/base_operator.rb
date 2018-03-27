@@ -1,4 +1,5 @@
 class BaseOperator
+
   attr_reader :value
 
   def initialize(value)
@@ -9,4 +10,5 @@ class BaseOperator
   def execute(value)
     raise NotImplementedError, "Subclasses must implement the execute method"
   end
+
 end
